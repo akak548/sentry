@@ -834,7 +834,7 @@ type GroupActivityData = {
   text?: string;
 };
 
-type GroupActivity = {
+export type GroupActivity = {
   data: GroupActivityData;
   dateCreated: string;
   id: string;
@@ -872,7 +872,7 @@ export type Group = GroupFiltered & {
   seenBy: User[];
   shareId: string;
   shortId: string;
-  status: string;
+  status: 'reprocessing' | ResolutionStatus;
   statusDetails: ResolutionStatusDetails;
   tags: Pick<Tag, 'key' | 'name' | 'totalValues'>[];
   title: string;
