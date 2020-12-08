@@ -24,8 +24,7 @@ import {generateFieldOptions} from 'app/views/eventsV2/utils';
 import SelectField from 'app/views/settings/components/forms/selectField';
 import TextField from 'app/views/settings/components/forms/textField';
 
-// forwarded from src/sentry/static/sentry/app/actionCreators/modal.tsx
-type DashboardWidgetModalOptions = {
+export type DashboardWidgetModalOptions = {
   organization: Organization;
   dashboard: DashboardListItem;
   widget?: Widget;
