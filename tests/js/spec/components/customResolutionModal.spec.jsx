@@ -21,7 +21,6 @@ describe('CustomResolutionModal', function () {
         projectId="project-slug"
         onCanceled={() => false}
         onSelected={onSelected}
-        show
       />,
       TestStubs.routerContext()
     );
