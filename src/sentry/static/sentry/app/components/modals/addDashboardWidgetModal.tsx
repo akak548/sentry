@@ -307,7 +307,7 @@ class AddDashboardWidgetModal extends React.Component<Props, State> {
                 disabled={state.loading}
                 busy={state.loading}
               >
-          {isUpdatingWidget ? t('Update Widget') : t('Add Widget')}
+                {isUpdatingWidget ? t('Update Widget') : t('Add Widget')}
               </Button>
             </FooterButtons>
           </form>
